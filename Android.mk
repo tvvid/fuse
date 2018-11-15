@@ -18,3 +18,6 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(call first-makefiles-under,$(LOCAL_PATH))
+include $(CLEAR_VARS) 
+include $(LOCAL_PATH)/external/fuse/lib/Android.mk \ 
+            $(LOCAL_PATH)/fusermount.mk 
